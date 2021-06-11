@@ -1,5 +1,5 @@
 # USING BASE IMAGE FROM DOCKER HUB
-from python:3.8.5-alpine
+FROM python:3.8.5-alpine
 
 # UPGRADING PIP 
 RUN pip install --upgrade pip

@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'djangotestproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -128,10 +128,8 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# MEDIA_URL = '/static/media/'
 
-STATIC_URL = '/static/static/'
-MEDIA_URL = '/static/media/'
-
-STATIC_ROOT = '/vol/web/static'
-MEDIA_ROOT = 'vol/web/media'
+STATIC_ROOT = 'vol/web/static/'
+# MEDIA_ROOT = 'vol/web/media'
 
